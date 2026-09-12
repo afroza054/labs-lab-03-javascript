@@ -1,4 +1,4 @@
-Objective 
+Objective::: 
 The objectives of Lab 02 were to learn the basic concepts of JavaScript and use JavaScript to make an HTML webpage interactive.
 In this lab, I learned how to:
 •	Create and use JavaScript variables.
@@ -10,7 +10,7 @@ In this lab, I learned how to:
 •	Use if...else statements to make decisions.
 •	Connect JavaScript code with HTML elements.
 
-Tools Used
+Tools Used:::
 The following tools were used to complete Lab 03:
 •	Visual Studio Code – for writing and editing HTML and JavaScript.
 •	Web Browser – for running and testing the webpage.
@@ -18,7 +18,7 @@ The following tools were used to complete Lab 03:
 •	HTML – for creating the webpage structure.
 •	JavaScript – for adding interaction and dynamic behavior.
 
-Work Completed
+Work Completed:::
 In this lab, I added JavaScript interactions to the workshop webpage.
 Three main JavaScript functions were implemented:
 Registration Status
@@ -45,7 +45,7 @@ output.textContent = "Welcome, " + name + "!";
 The HTML button uses onclick="checkSeats()" to call the seat-checking function when the user clicks the button.
 
  
-Key JavaScript Explanation
+Key JavaScript Explanation:::
 
 Variable
 A variable stores information that can be used by a program. In my code, the following variable stores the number of available seats:
@@ -89,7 +89,7 @@ In my code:
 message.textContent = "Registration is currently open.";
 This changes the text displayed inside the selected HTML element.
 
-GitHub Link
+GitHub Link:::
 
 The completed Lab 03 project was uploaded to my GitHub repository.
 GitHub Repository: https://github.com/afroza054/labs-lab-03-javascript
@@ -103,7 +103,7 @@ labs/
         └── script.js
 
 
-Learning Reflection
+Learning Reflection:::
 
 What is the job of JavaScript in a webpage?
 JavaScript makes a webpage interactive and dynamic. It allows the webpage to respond to user actions, read input, perform calculations, make decisions, and change displayed content.
@@ -116,7 +116,7 @@ One error I found was that the checkSeats() button and the element with id="seat
 4. What simple JavaScript improvement did you add independently?
 I added a personalized greeting feature using the student's name. The program reads the name using .value and displays "Welcome, [name]!" using .textContent. This makes the webpage more interactive and user-friendly.
 
-AI Assistance Declaration
+AI Assistance Declaration:::
 I used an AI tool to help me understand JavaScript concepts and organize the Lab 02 report. The AI assistance was used for explanations of JavaScript features such as variables, functions, if...else, onclick, getElementById(), .value, and .textContent, as well as for organizing the report structure.
 I personally checked the JavaScript and HTML code, tested the webpage interactions, and reviewed/corrected the repeated id="seatMessage" elements before submission.
 
