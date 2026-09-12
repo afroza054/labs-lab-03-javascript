@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile | Registration Portfolio</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/student-profile.css">
+</head>
+
+<body>
+
+    <header id="top">
+        <div class="container">
+            <h3>Student Profile</h3>
+            <p class="subtitle">Student Registration Portal</p>
+            <nav class="navigation">
+                <a href="#about">About Me</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Profile Section -->
+        <section id="about" class="profile-section">
+            <div class="profile-image">
+                <img src="assets/student.jpg" alt="Student profile illustration">
+            </div>
+
+            <div class="profile-content">
+                <h2>About Me</h2>
+                <label for="studentName">Full Name</label>
+                <input type="text" id="studentName" name="studentName" required>
+                <button type="button" onclick="showGreeting()">Show Greeting
+                        
+                </button>
+                <p id="greetingMessage">
+                    <img src="assets/greetingCard.jpg" style="width: 150px; height: 150px;">
+                </p>
+                I am interested in web development, programming, and information
+                    technology.
+                <p>
+                    My academic goal is to develop strong technical and
+                    problem-solving skills. 
+                </p>
+                <h4 style="color: blue;">Registration for Workshop</h4>
+                <p>
+                    <button type="button" onclick="checkSeats()">Check Seat Availability</button>
+                <p id="seatMessage">Seat information will appear here.</p></p>
+                    <button type="button" onclick="checkRegistration()">Check Registration Status</button>
+                <p id="registrationStatus">Click the button to check the status.</p>
+
+
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section-box">
+            <h2>Educational Background</h2>
+
+            <p>
+                I am currently studying Computer Science and Engineering.
+            </p>
+
+            <table>
+                <caption>Academic Information</caption>
+                <thead>
+                    <tr>
+                        <th>Program</th>
+                        <th>Institution</th>
+                        <th>Year</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>B.Sc. in CSE</td>
+                        <td>ABC University</td>
+                        <td>2026</td>
+                        <td>Ongoing</td>
+                    </tr>
+
+                    <tr>
+                        <td>Higher Secondary</td>
+                        <td>XYZ College</td>
+                        <td>2022</td>
+                        <td>Completed</td>
+                    </tr>
+
+                    <tr>
+                        <td>Secondary School</td>
+                        <td>XYZ High School</td>
+                        <td>2020</td>
+                        <td>Completed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact" class="section-box">
+            <h2>Contact Me</h2>
+
+            <p>
+                If you would like to contact me about an academic project
+                or collaboration, please use the form below.
+            </p>
+
+            <form class="contact-form" action="#" method="post">
+
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Write your message"
+                    ></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Afroza | Student Academic Profile</p>
+            <a href="#top" class="back-to-top">Back to Top</a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
