@@ -46,6 +46,7 @@ The HTML button uses onclick="checkSeats()" to call the seat-checking function w
 
  
 Key JavaScript Explanation
+
 Variable
 A variable stores information that can be used by a program. In my code, the following variable stores the number of available seats:
 let availableSeats = 12; Here, availableSeats contains the value 12.
@@ -59,12 +60,14 @@ if (availableSeats > 0) {
     message.textContent = "Sorry, no seats are available.";
 }
 If availableSeats is greater than 0, the webpage says that seats are available. Otherwise, it says that there are no seats available.
+
 Function
 A function is a block of JavaScript instructions designed to perform a particular task.
 function checkSeats() {
     // instructions
 }
 The checkSeats() function is responsible for checking and displaying the number of available seats.
+
 onclick
 onclick runs a JavaScript function when the user clicks an HTML element.
 In my HTML:
@@ -87,6 +90,7 @@ message.textContent = "Registration is currently open.";
 This changes the text displayed inside the selected HTML element.
 
 GitHub Link
+
 The completed Lab 03 project was uploaded to my GitHub repository.
 GitHub Repository: https://github.com/afroza054/labs-lab-03-javascript
 Lab 03 Folder:
@@ -98,35 +102,19 @@ labs/
     └── js/
         └── script.js
 
+
 Learning Reflection
+
 What is the job of JavaScript in a webpage?
 JavaScript makes a webpage interactive and dynamic. It allows the webpage to respond to user actions, read input, perform calculations, make decisions, and change displayed content.
-Why must an HTML id match the value used in getElementById()?
-The getElementById() method uses the ID to find a particular HTML element. Therefore, the ID written in HTML must match the value passed to getElementById().
-For example:
-<p id="seatMessage"></p>
-is selected using:
-document.getElementById("seatMessage");
-What is the difference between creating a function and calling a function?
-Creating or defining a function means writing the instructions that the function will perform.
-Calling a function means executing those instructions.
-For example:
-function checkSeats() {
-    // instructions
-}
-creates the function, while:
-checkSeats();
-calls the function.
-What does .value read?
-.value reads the value entered or selected in a form input.
-In this lab:
-let name = document.getElementById("studentName").value;
-reads the student's name from the input field.
-What does .textContent change?
-.textContent changes the text inside an HTML element.
-For example:
-message.textContent = "Registration is currently open.";
-changes the text displayed by the selected HTML element.
+1. What is one clear difference between HTML and JavaScript?
+HTML is used to create and structure the content of a webpage, while JavaScript is used to make the webpage interactive and dynamic. For example, HTML creates a button, while JavaScript can make the button perform an action when clicked.
+2. Which JavaScript concept was most useful in this laboratory? Why?
+The most useful concept was functions because they allowed me to organize different actions into separate blocks of code. For example, checkSeats() checks seat availability, while showGreeting() displays a personalized greeting. This makes the code easier to understand and manage.
+3. Describe one error you faced and how you fixed it.
+One error I found was that the checkSeats() button and the element with id="seatMessage" were repeated multiple times in the HTML. I fixed the problem by keeping only one button and one seatMessage element. This made the HTML structure clearer and allowed getElementById() to work correctly with the intended element.
+4. What simple JavaScript improvement did you add independently?
+I added a personalized greeting feature using the student's name. The program reads the name using .value and displays "Welcome, [name]!" using .textContent. This makes the webpage more interactive and user-friendly.
 
 AI Assistance Declaration
 I used an AI tool to help me understand JavaScript concepts and organize the Lab 02 report. The AI assistance was used for explanations of JavaScript features such as variables, functions, if...else, onclick, getElementById(), .value, and .textContent, as well as for organizing the report structure.
